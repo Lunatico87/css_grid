@@ -5,7 +5,7 @@
 
 .grid-container {
   display: grid;
-  gap: 10px;
+  gap: 1px;
   grid-template-areas:
     "header header header header header"
     "nav main main main main"
@@ -20,6 +20,9 @@ header {
   background-repeat: no-repeat;
   background-position: top;
   height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -27,7 +30,6 @@ h1 {
   font-size: 100px;
   color: white;
   text-align: center;
-  padding-top: 50px;
   -webkit-text-stroke: 2px;
 }
 
@@ -67,7 +69,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   border: 3px solid black;
   border-radius: 10px;
   margin: 10px 10px;
@@ -84,14 +85,21 @@ main {
 }
 button {
   width: 100%;
-  height: 10%;
+  height: 20%;
   font-size: medium;
   border-color: rgb(77, 148, 247);
   border-radius: 0px 0px 5px 5px;
 }
 
+button:hover {
+  color: white;
+  background-color: black;
+}
 footer {
   grid-area: footer;
   background-color: #013183;
   height: 10vh;
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }

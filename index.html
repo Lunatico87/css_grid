@@ -9,7 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>CSS Grid</title>
+    <link rel="shortcut icon" href="./assets/imgs/luna_favicon.png" type="image/x-icon">
+    <title>Luna Store</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,29 +18,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="grid-container">
       <header>
-        <h1>Steal.Gots</h1>
+        <h1>Luna Store</h1>
       </header>
 
       <nav>
         <div class="sidemenu">
-          <a href="#">Tecnologia</a>
+          <a href="#">Tecnologia (8)</a>
         </div>
         <div class="sidemenu">
-          <a href="#">Ropa</a>
+          <a href="#">Ropa (12)</a>
         </div>
         <div class="sidemenu">
-          <a href="#">Calzado</a>
+          <a href="#">Calzado (6)</a>
         </div>
         <div class="sidemenu">
-          <a href="#">Perfumes</a>
-        </div>
-        <div class="sidemenu">
-          <a href="#">Varios</a>
+          <a href="#">Varios (23)</a>
         </div>
       </nav>
 
@@ -49,6 +53,11 @@
             <img src="./assets/imgs/earpods.png" alt="earpods" />
           </div>
           <h4>Earpods 3XP</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
           <p>32.000 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -57,6 +66,12 @@
             <img src="./assets/imgs/headphones.png" alt="headphones" />
           </div>
           <h4>Headphone Acanthus</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>35.000 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -65,6 +80,12 @@
             <img src="./assets/imgs/keyboard.png" alt="keyboard" />
           </div>
           <h4>Keyboard Vicho Bluetooth</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>18.000 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -73,6 +94,12 @@
             <img src="./assets/imgs/laptop.png" alt="laptop" />
           </div>
           <h4>Compaq NX</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>499.000 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -81,6 +108,12 @@
             <img src="./assets/imgs/monitor.png" alt="monitor" />
           </div>
           <h4>Monitor Huascar</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+
           <p>149.500 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -89,6 +122,12 @@
             <img src="./assets/imgs/mouse.png" alt="mouse" />
           </div>
           <h4>Mouse Rat4</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>4.990 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -97,6 +136,12 @@
             <img src="./assets/imgs/smartwatch.png" alt="smartwatch" />
           </div>
           <h4>Smartwatch Dumbwatch</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>120.990 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
@@ -105,16 +150,27 @@
             <img src="./assets/imgs/webcam.png" alt="webcam" />
           </div>
           <h4>Webcam 3X</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+
           <p>29.590 CLP</p>
           <button>Comprar <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
       </main>
 
       <footer>
-        <p>Created by Lunatico87
-        <a href="https://github.com/Lunatico87"><i class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com/beto_luna87"><i class="fa-brands fa-square-instagram"></i></a>
-      </p>
+        <p>
+          Created by Lunatico87. All rights reserved. 2024 <br />
+          <a href="https://github.com/Lunatico87"
+            ><i class="fa-brands fa-github fa-xl"></i
+          ></a>
+          <a href="https://instagram.com/beto_luna87"
+            ><i class="fa-brands fa-square-instagram fa-xl"></i
+          ></a>
+        </p>
       </footer>
     </div>
   </body>
